@@ -5,6 +5,8 @@ This script started as a way to automated the communication between firewalls an
 
 The script will take two inputs, and start an ARP poison attack on them to allow for a MITM. While this is happening, a capture is started to save all data that is captured during the MITM. This runs until you hit neter, in which the file is then saved, the poison stopped, and CredSlayer is then run on the output file automatically to extract all credentials and hashes available. 
 
+Because many firewall and appliance vendors that authenticate to LDAP default to non-TLS communication, this traffic can be captured and credentials extracted. In many instances, these accounts can also have high privileges to allow for changes in AD, such as user password changes. 
+
 Requirements: 
 ```
 sudo python -m pip install -r requirements.txt
