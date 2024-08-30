@@ -14,3 +14,4 @@ Output:
 LDAP Buster
 By: Hann1bl3L3ct3r
 Script to target two devices for ARP poisoning to capture authentication information which is saved to a file and parsed with CredSlayer.
+Note: Must be run as ROOT
